@@ -20,11 +20,11 @@ application = app.server
 app.layout = html.Div([
     html.H6("Prediction for Housing Prices in Beijing"),
     html.Div(["Community Name: ",
-              dcc.Textarea(id='cus_input', value="五矿万科如园", style={'width': '100%'})]),
+              dcc.Textarea(id='cus_input', value=" ", style={'width': '100%'})]),
 
     html.Br(),
     html.Button('Predict', id='button_1'),
-    
+
     html.Br(),
     html.Br(),
     html.Div(id='my-output'),
@@ -64,4 +64,3 @@ def update_output_div(n_clicks, input):
 
 if __name__ == '__main__':
     app.run_server(debug=False)
-
